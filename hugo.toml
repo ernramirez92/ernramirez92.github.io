@@ -1,0 +1,8 @@
+baseURL = 'https://ernestoaramirez.com/'
+languageCode = 'en-us'
+title = 'Ernesto Alejandro Ramirez'
+theme = "hugo-bearblog"
+
+[params]
+  hideMadeWithLine = true
+  dateFormat = "2006-01-02"

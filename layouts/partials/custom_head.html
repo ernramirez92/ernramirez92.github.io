@@ -1,0 +1,74 @@
+<style>
+  /* Active navigation menu item indicator */
+  nav a.active::before {
+    content: "👉 ";
+  }
+
+  /* Active title/site name indicator */
+  a.title.active h2::before {
+    content: "👉 ";
+  }
+
+  /* Center all images in main content */
+  main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .project-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 0.75em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .project-card p {
+    display: none;
+  }
+
+  .project-card a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .project-card a:hover {
+    text-decoration: none;
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+</style>

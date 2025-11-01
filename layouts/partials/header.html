@@ -1,0 +1,5 @@
+{{ $isHome := eq .RelPermalink "/" }}
+<a href="{{ "" | relURL }}" class="title{{ if $isHome }} active{{ end }}">
+  <h2>{{ .Site.Title }}</h2>
+</a>
+<nav>{{- partial "nav.html" . -}}</nav>
